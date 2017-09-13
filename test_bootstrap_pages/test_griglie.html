@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test griglie</title>
+
+    <!-- Gestione del responsive (vedi http://www.html.it/pag/33420/il-meta-tag-viewport/) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>Test griglie</h1>
+    </div>
+
+
+    <!-- Qui c'è il codice della griglia -->
+
+    <div class="container"> <!-- Centra il contenuto rispetto alla finestra e scelgo un layout delimitato in larghezza-->
+
+        <!-- Qui va la griglia -->
+
+        <div class="row">
+
+            <div class="col-xs-12 col-md-4 bg-danger">
+
+                <form method="post" action="esegui.php">
+
+                    <!-- CASELLE DI TESTO -->
+                    Nome<br>
+                    <input type="text" name="nome"><br>
+                    Cognome<br>
+                    <input type="text" name="cognome"><br>
+
+                    <!-- SELECTBOX -->
+                    Paese<br>
+                    <select name="paese">
+                        <option value="I">Italia</option>
+                        <option value="E">Estero</option>
+                    </select><br>
+
+                    <!-- RADIO -->
+                    Sesso<br>
+                    <input type="radio" name="sesso" value="M"> M<br>
+                    <input type="radio" name="sesso" value="F"> F<br>
+
+                    <!-- CHECKBOX -->
+                    Hobby<br>
+                    <input type="checkbox" name="hobby" value="S"> Sport<br>
+                    <input type="checkbox" name="hobby" value="L"> Lettura<br>
+                    <input type="checkbox" name="hobby" value="C"> Cinema<br>
+                    <input type="checkbox" name="hobby" value="I"> Internet<br>
+
+                    <!-- TEXTAREA -->
+                    Commento<br>
+                    <textarea name="commento" rows="5" cols="30"></textarea>
+                    <br><br>
+
+                    <!-- SUBMIT -->
+                    <input class="btn btn-danger" type="submit" name="invia" value="Invia i dati">
+
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-md-4 bg-success">
+
+                <form method="post" action="esegui.php">
+
+                    <!-- CASELLE DI TESTO -->
+                    Nome<br>
+                    <input type="text" name="nome"><br>
+                    Cognome<br>
+                    <input type="text" name="cognome"><br>
+
+                    <!-- SELECTBOX -->
+                    Paese<br>
+                    <select name="paese">
+                        <option value="I">Italia</option>
+                        <option value="E">Estero</option>
+                    </select><br>
+
+                    <!-- RADIO -->
+                    Sesso<br>
+                    <input type="radio" name="sesso" value="M"> M<br>
+                    <input type="radio" name="sesso" value="F"> F<br>
+
+                    <!-- CHECKBOX -->
+                    Hobby<br>
+                    <input type="checkbox" name="hobby" value="S"> Sport<br>
+                    <input type="checkbox" name="hobby" value="L"> Lettura<br>
+                    <input type="checkbox" name="hobby" value="C"> Cinema<br>
+                    <input type="checkbox" name="hobby" value="I"> Internet<br>
+
+                    <!-- TEXTAREA -->
+                    Commento<br>
+                    <textarea name="commento" rows="5" cols="30"></textarea>
+                    <br><br>
+
+                    <!-- SUBMIT -->
+                    <input class="btn btn-success" type="submit" name="invia" value="Invia i dati">
+
+                </form>
+            </div>
+
+            <div class="col-xs-12 col-md-4 bg-info">
+
+                <form method="post" action="esegui.php">
+
+                    <!-- CASELLE DI TESTO -->
+                    Nome<br>
+                    <input type="text" name="nome"><br>
+                    Cognome<br>
+                    <input type="text" name="cognome"><br>
+
+                    <!-- SELECTBOX -->
+                    Paese<br>
+                    <select name="paese">
+                        <option value="I">Italia</option>
+                        <option value="E">Estero</option>
+                    </select><br>
+
+                    <!-- RADIO -->
+                    Sesso<br>
+                    <input type="radio" name="sesso" value="M"> M<br>
+                    <input type="radio" name="sesso" value="F"> F<br>
+
+                    <!-- CHECKBOX -->
+                    Hobby<br>
+                    <input type="checkbox" name="hobby" value="S"> Sport<br>
+                    <input type="checkbox" name="hobby" value="L"> Lettura<br>
+                    <input type="checkbox" name="hobby" value="C"> Cinema<br>
+                    <input type="checkbox" name="hobby" value="I"> Internet<br>
+
+                    <!-- TEXTAREA -->
+                    Commento<br>
+                    <textarea name="commento" rows="5" cols="30"></textarea>
+                    <br><br>
+
+                    <!-- SUBMIT -->
+                    <input class="btn btn-info" type="submit" name="invia" value="Invia i dati">
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <br>
+        <p>Powered by
+            <a href="http://www.html.it/pag/45422/layout-responsive-con-bootstrap-la-griglia/">www.html.it</a>
+            e
+            <a href="https://www.w3schools.com/bootstrap/bootstrap_grid_basic.asp">www.w3schools.com</a>
+        </p>
+    </div>
+
+    <!-- Script da caricare, meglio qui così la grafica appare prima all'utente -->
+    <!-- jQuery e plugin JavaScript  -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>

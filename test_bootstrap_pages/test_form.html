@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test form</title>
+
+    <!-- Gestione del responsive (vedi http://www.html.it/pag/33420/il-meta-tag-viewport/) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <h1>Test form</h1>
+    </div>
+
+
+    <div class="container-fluid bg-success">
+
+        <div>
+            <h1>Con bootstrap</h1>
+        </div>
+
+        <form>
+
+            <!-- CASELLE DI TESTO -->
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd">
+            </div>
+
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+
+    </div>
+
+    <div class="container-fluid bg-info">
+
+        <div>
+            <h1>No bootstrap</h1>
+        </div>
+
+        <form method="post" action="esegui.php">
+
+            <!-- CASELLE DI TESTO -->
+            Nome<br>
+            <input type="text" name="nome"><br>
+            Cognome<br>
+            <input type="text" name="cognome"><br>
+
+            <!-- SELECTBOX -->
+            Paese<br>
+            <select name="paese">
+                <option value="I">Italia</option>
+                <option value="E">Estero</option>
+            </select><br>
+
+            <!-- RADIO -->
+            Sesso<br>
+            <input type="radio" name="sesso" value="M"> M<br>
+            <input type="radio" name="sesso" value="F"> F<br>
+
+            <!-- CHECKBOX -->
+            Hobby<br>
+            <input type="checkbox" name="hobby" value="S"> Sport<br>
+            <input type="checkbox" name="hobby" value="L"> Lettura<br>
+            <input type="checkbox" name="hobby" value="C"> Cinema<br>
+            <input type="checkbox" name="hobby" value="I"> Internet<br>
+
+            <!-- TEXTAREA -->
+            Commento<br>
+            <textarea name="commento" rows="5" cols="30"></textarea>
+            <br><br>
+
+            <!-- SUBMIT -->
+            <input type="submit" name="invia" value="Invia i dati">
+
+        </form>
+
+    </div>
+
+    <div class="container-fluid">
+        <br>
+        <p>Powered by
+            <a href="https://www.mrwebmaster.it/html/form-moduli_9457.html">www.mrwebmaster.it</a>
+        e
+            <a href="https://www.w3schools.com/bootstrap/bootstrap_forms.asp">www.w3schools.com</a></p>
+    </div>
+
+    <!-- Script da caricare, meglio qui così la grafica appare prima all'utente -->
+    <!-- jQuery e plugin JavaScript  -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
